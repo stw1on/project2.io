@@ -1,1 +1,13 @@
+# Example 1: Block only Googlebot
+User-agent: Googlebot
+Disallow: /
 
+# Example 2: Block Googlebot and Adsbot
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Disallow: /
+
+# Example 3: Block all clawlers except AdsBot (AdsBot crawlers bust me named explicitly)
+User-agent: *
+User-agent: AdsBot-Google
+Disallow: 
